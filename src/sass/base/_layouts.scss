@@ -19,8 +19,6 @@
   }
 }
 
-// TODO: add adaptive container
-
 .section {
   padding-bottom: 70px;
   @include media-query(desktop) {
@@ -28,7 +26,6 @@
   }
 }
 
-// TODO: add adaptive section
 
 .section__title {
   font-weight: 800;
@@ -43,10 +40,8 @@
   @include media-query(desktop) {
     font-size: 46px;
   }
-  // TODO: add color
 }
 
-// TODO: add adaptive section__title
 
 .section__subtitle {
   font-weight: 700;
@@ -56,28 +51,4 @@
     font-size: 20px;
     line-height: 1.4;
   }
-  // TODO: add color
 }
-
-// TODO: add adaptive section__subtitle
- 
-
-// Настройки кнопки
-
-// border: none;
-//  border-radius: 45px;
-//  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-//  transition: all 0.3s ease 0s;
-//  cursor: pointer;
-//  outline: none;
-
-//  &:focus,
-//  &:active,
-//  &:hover {
-//    background-color: $color-background;
-//    color: $color-accent;
-//    background-color: #fff;
-//    box-shadow: 0px 15px 20px $color-accent;
-//    color: $color-accent;
-//    transform: translateY(-7px);
-//  }
