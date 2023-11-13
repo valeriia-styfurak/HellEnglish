@@ -237,12 +237,7 @@
 
 .reviews__item {
   margin: 0 5px;
-
-  &.slick-current.slick-active {
-    outline: 2px solid $color-accent;
-    outline-offset: -2px;
-    border-radius: 50%;
-  }
+  width: auto;
 
   @include media-query(tablet) {
     margin: 0 15px;
@@ -252,4 +247,10 @@
 .reviews__photo {
   max-width: none;
   width: 54px;
+}
+
+.slick-current.slick-active .reviews__photo {
+  outline: 2px solid $color-accent;
+  outline-offset: -2px;
+  border-radius: 50%;
 }
