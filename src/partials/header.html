@@ -1,0 +1,60 @@
+<header class="header">
+  <div class="container header__container" data-menu>
+    <div class="logo--header">
+      <include src="./partials/logo.html"></include>
+    </div>
+
+    <div class="menu">
+      <div class="menu__container container">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#section-program"
+                >Studying program</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a
+                class="navigation__link navigation__link--accent"
+                href="#section-about"
+                >About</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#section-benefits"
+                >Training options</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="button-container">
+      <div class="button-transform" tabindex="0">
+        <button
+          id="open-button"
+          type="button"
+          class="header__button header__button--tablet open-button fill-button"
+        >
+          Consultation by phone
+        </button>
+      </div>
+    </div>
+    <button type="button" class="button header__menu-button" data-menu-button>
+      <svg class="header__svg header__svg--menu" width="30px" height="30px">
+        <use
+          class="header__icon-menu"
+          href="./images/icon-sprite.svg#icon-menu_40px"
+        ></use>
+        <use
+          class="header__icon-cross"
+          href="./images/icon-sprite.svg#icon-close_40px"
+        ></use>
+      </svg>
+    </button>
+    <div class="header__placeholder"></div>
+  </div>
+</header>

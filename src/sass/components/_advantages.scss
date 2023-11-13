@@ -1,0 +1,144 @@
+.advantages {
+  @media screen and (max-width: 767px) {
+    padding-left: 48px;
+    padding-right: 48px;
+    min-width: 320px;
+    max-width: 450px;
+  }
+  @include media-query(tablet) {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    min-width: $tablet;
+    max-width: 100%;
+  }
+  @include media-query(desktop) {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+
+.advantages__list {
+  @include media-query(tablet) {
+    display: flex;
+  }
+  @include media-query(desktop) {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  @include media-query(tablet) {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+}
+
+.advantages__item {
+  @include media-query(mobile) {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @include media-query(tablet) {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: calc((100% - 3 * 20px) / 3);
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include media-query(desktop) {
+    margin-right: 15px;
+    margin-left: 15px;
+    width: calc((100% - 3 * 30px) / 3);
+  }
+}
+
+.helper {
+  width: 15px;
+  height: 46px;
+  background-color: #fff;
+  margin-left: -5px;
+  @include media-query(desktop) {
+    display: none;
+  }
+}
+.advantages__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.65;
+  align-items: center;
+
+  padding-left: 5px;
+  background-color: #fff;
+
+  @include media-query(desktop) {
+    margin-left: -23px;
+    font-size: 20px;
+    width: 260px;
+  }
+}
+
+.advantages__item:nth-child(1)::before {
+  content: ' ';
+
+  padding: 28px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid $color-accent;
+  background-image: url(../images/advantages/student.svg);
+  background-repeat: no-repeat;
+  background-size: 34px 40px;
+  background-position: center;
+  @include media-query(desktop) {
+    padding: 49px;
+    width: 100px;
+    height: 100px;
+    background-size: 40px 48px;
+    background-position: 25px 27px;
+  }
+}
+
+.advantages__item:nth-child(2)::before {
+  content: ' ';
+
+  padding: 28px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid $color-accent;
+  background-image: url(../images/advantages/mobile-learning.svg);
+  background-repeat: no-repeat;
+  background-size: 42px 41px;
+  background-position: center;
+  @include media-query(desktop) {
+    padding: 49px;
+    width: 100px;
+    height: 100px;
+    background-size: 48px 47px;
+    background-position: 21px 27px;
+  }
+}
+
+.advantages__item:nth-child(3)::before {
+  content: ' ';
+
+  padding: 28px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid $color-accent;
+  background-image: url(../images/advantages/insurance.svg);
+  background-repeat: no-repeat;
+  background-size: 35px 40px;
+  background-position: center;
+  @include media-query(desktop) {
+    padding: 49px;
+    width: 100px;
+    height: 100px;
+    background-size: 42px 48px;
+    background-position: 24px 27px;
+  }
+}

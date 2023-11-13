@@ -1,0 +1,90 @@
+.form__input {
+  color: $color-background;
+  background-color: transparent;
+  outline: transparent;
+  transition: border $transition;
+  &::placeholder {
+      color: $color-background;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.21;
+      letter-spacing: 0.08em;
+    }
+  
+    &:not(:placeholder-shown):required:invalid {
+      border-color: #ff0000;
+    }
+}
+
+.contacts__form-input {
+  margin-bottom: 20px;
+  padding-left: 18px;
+  width: 280px;
+  height: 48px;
+  border: 2px solid $color-background;
+
+  &:last-of-type {
+    margin-bottom: 50px;
+
+    @include media-query(tablet) {
+      margin-bottom: 30px;
+    }
+
+    @include media-query(desktop) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &::placeholder {
+    color: $color-background;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.08em;
+  }
+
+  &:not(:placeholder-shown):required:invalid {
+    border-color: #ff0000;
+  }
+
+  @media screen and (max-width: 319px) {
+    width: 100%;
+  }
+  @include media-query(tablet) {
+    width: 390px;
+    padding-left: 28px;
+  }
+
+  @include media-query(desktop) {
+    width: 478px;
+    height: 70px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+.modal__form-input {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  border: 1px solid $color-background;
+  padding: 11px 11px 11px 42px;
+  font-size: 14px;
+
+  &:focus {
+    border: 1px solid $color-accent;
+  }
+
+  &:focus + .form__icon {
+    fill: $color-accent;
+  }
+
+  &::placeholder {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.01em;
+    color: $color-secondary-dark;
+  }
+}

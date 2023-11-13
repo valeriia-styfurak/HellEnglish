@@ -1,0 +1,32 @@
+// body {
+// 	background-image: url(../images/hero/bg-tab.png) ;
+// 	background-position: -64px 0px;
+// 	background-size: 768px;
+// 	background-repeat: no-repeat;
+// 	@include media-query(retina) {
+// 		background-image: url(../images/hero/bg-tab@2x.png) ;
+// 	}
+// 	@include media-query(tablet) {
+// 		background-position: 0px 0px;
+// 		background-size: 768px 500px;
+// 	}
+// }
+body {
+	background-image: url(../images/hero/wave-bg.svg);
+	background-position: -64px 0px;
+	background-size: 768px;
+	background-repeat: no-repeat;
+
+	@include media-query(retina) {
+		// background-image: url(../images/hero/bg-tab@2x.png);
+	}
+
+	@include media-query(tablet) {
+		background-position: 0px 0px;
+		// background-size: 768px 500px;
+	}
+	@include media-query(desktop) {
+		background-image: url(../images/hero/wave-bgdesktop.svg);
+		background-size: 100%;
+	}
+}

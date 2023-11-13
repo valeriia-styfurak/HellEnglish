@@ -1,0 +1,164 @@
+.header__svg {
+  fill: $color-primary;
+}
+
+.header__icon-menu {
+  display: block;
+}
+// .button {
+//   background-color: transparent;
+// }
+.header__menu-button {
+  margin-left: 40px;
+  background-color: transparent;
+  z-index: 5;
+  @include media-query(desktop) {
+    display: none;
+  }
+  &.is-open {
+    position: fixed;
+    @include media-query(mobile) {
+      top: 30px;
+      right: 20px;
+    }
+    @include media-query(responsive) {
+      right: calc((100% - 480px + 40px) / 2);
+    }
+    @include media-query(tablet) {
+      right: calc((100% - 688px) / 2);
+      top: 47px;
+    }
+
+    & .header__svg {
+      fill: $color-background;
+    }
+    & .header__icon-menu {
+      opacity: 0;
+    }
+
+    & .header__icon-cross {
+      opacity: 1;
+    }
+  }
+}
+.header__icon-menu {
+  opacity: 1;
+}
+.header__icon-cross {
+  opacity: 0;
+}
+.header__container {
+  &.is-open {
+    padding-right: 110px;
+    // z-index: 20;
+    // position: fixed;
+    // top: 30px;
+    // width: 100%;
+    // @include media-query(responsive) {
+    // 	max-width: 480px;
+    // 	left: calc((100% - 480px)/2);
+    // }
+    // @include media-query(tablet) {
+    // 	max-width: 768px;
+    // 	left: calc((100% - 768px)/2)
+    // }
+    & .header__placeholder {
+      @include media-query(mobile-only) {
+        display: block;
+      }
+    }
+    & .menu {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: initial;
+    }
+    & .logo--header .logo {
+      color: $color-background;
+    }
+    & .logo--header {
+      @include media-query(mobile) {
+        left: 20px;
+      }
+      @include media-query(responsive) {
+        position: fixed;
+        top: 30px;
+        left: calc((100% - 480px + 40px) / 2);
+      }
+      @include media-query(tablet-only) {
+        position: fixed;
+        top: 40px;
+        left: calc((100% - 768px + 80px) / 2);
+      }
+    }
+    // & .navigation__link--accent {
+    // 	color: $color-accent;
+    // }
+
+    & .header__button {
+      @include media-query(mobile-only) {
+        z-index: 100;
+        position: fixed;
+        top: 298px;
+        left: calc((100% - 260px) / 2);
+        display: block;
+      }
+      @include media-query(tablet) {
+        margin: 0;
+      }
+    }
+  }
+}
+.menu {
+  transition: opacity $transition;
+  z-index: 2;
+  position: fixed;
+
+  @include media-query(not-desktop) {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      $color-gradient,
+      $color-gradient
+    );
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    padding: 108px 0px 0px 0px;
+  }
+  @include media-query(desktop) {
+    display: flex;
+    position: static;
+    margin-left: auto;
+  }
+}
+.menu__container {
+  @include media-query(desktop) {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    max-width: 648px;
+  }
+}
+.logo--header {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 21px;
+  @include media-query(tablet) {
+    position: absolute;
+    top: 1.5px;
+    left: 41px;
+  }
+  @include media-query(desktop) {
+    position: static;
+    display: flex;
+    align-items: center;
+    // top: 12px;
+  }
+}
+.logo--header .logo {
+  transition: color $transition;
+}

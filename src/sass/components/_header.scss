@@ -1,0 +1,121 @@
+.header__container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  // @include media-query(desktop) {
+  // 	justify-content: space-between;
+  // }
+}
+.header {
+  padding-top: 30px;
+  @include media-query(tablet-only) {
+    padding-top: 40px;
+  }
+}
+// .header__logo-container {
+// 	position: relative;
+// }
+.navigation__list {
+  @include media-query(tablet) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include media-query(desktop) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.navigation__item {
+  @include media-query(tablet) {
+  }
+  // &:not(:last-child) {
+  // 	@include media-query(desktop) {
+  // 	margin-right: 40px;
+  // 	}
+  // }
+}
+.navigation__link {
+  transition: color $transition;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.8;
+  color: $color-background;
+  letter-spacing: 0.03em;
+  @include media-query(tablet) {
+    font-size: 26px;
+  }
+  @include media-query(desktop) {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    color: $color-secondary;
+  }
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+// .navigation__link--accent {
+// 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+// 	@include media-query(not-desktop) {
+// 		color: $color-background;
+// 	}
+// 	@include media-query (desktop) {
+// 		color: $color-accent;
+// 		transition: none;
+// 	}
+// }
+.navigation {
+  @include media-query(mobile-only) {
+    margin-bottom: 50px;
+  }
+  @include media-query(tablet) {
+    display: flex;
+  }
+
+  @include media-query(desktop) {
+    width: 100%;
+  }
+}
+
+.header__button {
+  padding: 14px 33px;
+  border: 2px solid #ff6b09;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  display: flex;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-accent;
+  background-color: transparent;
+  box-shadow: none;
+  justify-content: center;
+  align-items: center;
+  @include media-query(not-desktop) {
+    max-width: 260px;
+  }
+  @include media-query(tablet) {
+    letter-spacing: 0.14em;
+    width: 260px;
+    font-size: 14px;
+    padding: 13px 5px 14px 5px;
+  }
+
+  @include media-query(mobile-only) {
+    display: none;
+  }
+
+  @include media-query(desktop) {
+    margin-left: 60px;
+    margin-right: 0;
+    padding: 25px 23px 24px 24px;
+    width: 336px;
+  }
+}
+.header__placeholder {
+  display: none;
+  height: 32.8px;
+}

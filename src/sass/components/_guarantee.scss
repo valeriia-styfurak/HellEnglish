@@ -1,0 +1,114 @@
+
+.guarantee .container{
+    @media screen and (max-width:767px ){
+    }
+    @include media-query(tablet){
+        width: 768px;
+        padding: 0 40px;
+    }
+        @include media-query(desktop){
+            width: 1366px; 
+            padding: 0 26px;
+        }
+}
+
+    
+.guarantee__list{
+    background-color: #F1F1F1;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+        @include media-query(tablet) {
+            padding: 30px 65px;
+        }
+    
+        @include media-query(desktop) {
+            padding: 50px 112px 45px 112px;
+    
+        }
+}
+.guarantee__title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px;
+    color:$color-primary;
+
+    @include media-query(desktop) {
+        margin-bottom: 50px;
+    }
+}
+
+.guarantee__item {
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.6;
+    color: $color-secondary-dark;
+
+    text-align: left;
+    padding-left: 39px;
+    letter-spacing: 0;
+
+    &:not(:last-of-type) {
+        border-left: 1px dashed $color-secondary;
+    }
+
+    &:not(:last-child) {
+        padding-bottom: 25px;
+
+    }
+
+    @include media-query(tablet) {
+        &:not(:last-child) {
+            padding-left: 39px;
+            padding-bottom: 20px;
+
+        }
+    }
+
+    @include media-query(desktop) {
+        font-size: 20px;
+        line-height: 1.4;
+        padding-left: 30px;
+        padding-bottom: 20px;
+
+
+        &:not(:last-child) {
+            padding-bottom: 45px;
+        }
+    }
+}
+
+.guarantee__item::before {
+    content: '';
+    background-image: url(../images/guarantee/Group-7.svg);
+    position: absolute;
+    width: 15px;
+    height: 24px;
+    background-color: #F1F1F1;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    left: -8px;
+    top: -1px;
+    margin-right: 20px;
+
+    @include media-query(desktop) {
+        top: -3px;
+        left: -10px;
+        background-image: url(../images/guarantee/Group-7.svg);
+        width: 20px;
+        height: 34px;
+    }
+}
+
+.guarantee__accent {
+    color: $color-accent;
+    font-size: inherit;
+}
+sup{
+    top:-.2em;
+}

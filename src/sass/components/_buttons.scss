@@ -1,0 +1,88 @@
+.fill-button {
+  display: inline;
+  border: none;
+  min-width: 260px;
+  min-height: 48px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-background;
+  background-color: $color-accent;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform $transition, color $transition,
+    background-color $transition, box-shadow $transition;
+
+  @include media-query(tablet) {
+    font-weight: 700;
+  }
+
+  @include media-query(desktop) {
+    min-width: 354px;
+    min-height: 70px;
+    font-size: 14px;
+    line-height: 1.21;
+    min-width: 354px;
+    min-height: 70px;
+  }
+}
+
+.button-container--hero {
+    justify-content: center;
+}
+.button-container {
+  display: flex;
+}
+
+.button-transform {
+  &:focus,
+  &:hover {
+    cursor: pointer;
+
+    .fill-button {
+      color: $color-accent;
+      background-color: $color-background;
+      box-shadow: 0px 15px 20px $color-accent;
+      transform: translateY(-7px);
+    }
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: $color-background;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color $transition;
+  z-index: 1;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+
+  @include media-query(tablet) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.modal__button-icon {
+  fill: currentColor;
+}
+
+.modal__fill-button {
+  display: block;
+  margin-top: 0;
+  min-width: 260px;
+  min-height: 48px;
+}
