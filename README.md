@@ -13,6 +13,16 @@ Hell-English is an interactive landing page designed to provide comprehensive in
 - **Logo Navigation**: Clicking the logo at the top or bottom of the page navigates back to the homepage.
 - **Animations**: Visual animations enhance user engagement.
 
+- ## Responsive Design
+
+The landing page is fully responsive, ensuring a seamless user experience across various devices. It incorporates the following breakpoints:
+
+- **Responsive (Mobile)**: 480px
+- **Tablet**: 768px
+- **Desktop**: 1440px
+
+This responsive design approach ensures that the site is accessible and user-friendly on a wide range of devices, from mobile phones to desktop computers.
+
 ## Technology Stack
 
 - **Frontend**: HTML, CSS, SASS, JavaScript, jQuery
