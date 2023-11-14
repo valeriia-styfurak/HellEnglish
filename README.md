@@ -4,7 +4,7 @@ Hell-English is an interactive landing page designed to provide comprehensive in
 
 ## Features
 
-- **Menu**: A navigational menu on the homepage lists all sections of the project.
+- **Menu**: A navigational menu on the homepage lists all sections of the project. For convenience, this menu becomes hidden in the burger menu when the screen is enlarged to less than 1440 px.
 - **Consultation Modal**: A button in the header opens a modal window, allowing users to apply for the course.
 - **Autofill Functionality**: Autofill in the modal form for user convenience, pulling data from the browser.
 - **Course Information**: Brief details about the course, its benefits, and the curriculum.
