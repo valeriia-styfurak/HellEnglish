@@ -13,7 +13,7 @@ Hell-English is an interactive landing page designed to provide comprehensive in
 - **Logo Navigation**: Clicking the logo at the top or bottom of the page navigates back to the homepage.
 - **Animations**: Visual animations enhance user engagement.
 
-- ## Responsive Design
+## Responsive Design
 
 The landing page is fully responsive, ensuring a seamless user experience across various devices. It incorporates the following breakpoints:
 
