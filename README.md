@@ -1,6 +1,6 @@
 # Hell-English
 
-[Hell-English](https://valeriia-styfurak.github.io/hell-english/) is an interactive landing page designed to provide comprehensive information about an English language course. It aims to attract and assist potential students in understanding and enrolling in the course.
+[Hell-English](https://valeriia-styfurak.github.io/hell-english/) is an interactive landing page designed to provide comprehensive information about an English language course. It aims to attract and assist potential students in understanding and enrolling in the course. This project was developed as part of a programming course, in collaboration with other students.
 
 ## Features
 
