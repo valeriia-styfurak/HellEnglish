@@ -74,6 +74,7 @@
       background-image: url('../images/program/bg_tab.jpg');
 
       @include media-query(retina) {
+        max-width: 576px;
         background-image: url('../images/program/bg_tab@2x.jpg');
       }
     }
